@@ -1,34 +1,31 @@
 package mx.iteso;
 
 import mx.iteso.strategy.Ball;
-import mx.iteso.strategy.balls.AmericanFootballBall;
-import mx.iteso.strategy.balls.BaseballBall;
-import mx.iteso.strategy.balls.SoccerBall;
+import mx.iteso.strategy.balls.*;
 
 public class JamaiconSportsBallMain {
     public static void main (String[] args) {
-        Ball soccer = new SoccerBall();
-        Ball base = new BaseballBall();
-        Ball american = new AmericanFootballBall();
+        Ball[] balls = new Ball[8];
 
-        System.out.println(soccer.roll());
-        System.out.println(soccer.performBounce());
-        System.out.println(soccer.performDeflate());
-        System.out.println(soccer.performInflate());
+        balls[0] = (new AmericanFootballBall());
+        balls[1] = (new BaseballBall());
+        balls[2] = (new GolfBall());
+        balls[3] = (new HockeyBall());
+        balls[4] = (new PoolBall());
+        balls[5] = (new SoccerBall());
+        balls[6] = (new TennisBall());
+        balls[7] = (new VolleyballBall());
 
-        System.out.println();
+        for (int i = 0; i < balls.length; i++) {
+            Ball ball = balls[i];
 
-        System.out.println(american.roll());
-        System.out.println(american.performBounce());
-        System.out.println(american.performDeflate());
-        System.out.println(american.performInflate());
+            System.out.println(ball.roll());
+            System.out.println(ball.performBounce());
+            System.out.println(ball.performDeflate());
+            System.out.println(ball.performInflate());
+            System.out.println(ball.performInflate());
 
-        System.out.println();
-
-        System.out.println(base.roll());
-        System.out.println(base.performBounce());
-        System.out.println(base.performDeflate());
-        System.out.println(base.performInflate());
-
+            System.out.println();
+        }
     }
 }

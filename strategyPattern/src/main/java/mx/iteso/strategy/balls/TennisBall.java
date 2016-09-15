@@ -5,16 +5,17 @@ import mx.iteso.strategy.behaviors.DeflateBehavior;
 import mx.iteso.strategy.behaviors.RollBehavior;
 import mx.iteso.strategy.behaviors.impl.*;
 
-public class SoccerBall extends Ball {
-    public SoccerBall() {
-        bounceBehavior = new NormalBounce();
-        deflateBehavior = new Deflatable();
+public class TennisBall extends Ball{
+    public TennisBall() {
+        bounceBehavior =  new NormalBounce();
+        deflateBehavior = new NotDeflatable();
         rollBehavior = new NormalRoll();
-        type = "Soccer ball";
+        type = "Tennis ball";
     }
 
-    public SoccerBall (BounceBehavior bounce, DeflateBehavior deflate, RollBehavior roll) {
-        type = "Soccer ball";
+    public TennisBall (BounceBehavior bounce, DeflateBehavior deflate, RollBehavior roll) {
+        type = "Tennis ball";
+
         bounceBehavior = bounce;
         deflateBehavior = deflate;
         rollBehavior = roll;
