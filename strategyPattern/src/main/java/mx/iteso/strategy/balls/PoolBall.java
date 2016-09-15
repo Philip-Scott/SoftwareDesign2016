@@ -1,4 +1,5 @@
 package mx.iteso.strategy.balls;
+
 import mx.iteso.strategy.Ball;
 import mx.iteso.strategy.behaviors.BounceBehavior;
 import mx.iteso.strategy.behaviors.DeflateBehavior;

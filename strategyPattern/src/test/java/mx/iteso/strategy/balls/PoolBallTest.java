@@ -7,23 +7,22 @@ import mx.iteso.strategy.behaviors.impl.NotDeflatable;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
-
-public class HokeyBallTest {
+public class PoolBallTest {
     @Test
-    public void testHokeyball() {
-        HockeyBall ball = new HockeyBall();
+    public void testPoolBall() {
+        PoolBall ball = new PoolBall();
         assertEquals(BallsTest.IRREGULAR_BOUNCE, ball.performBounce());
         assertEquals(BallsTest.NOT_DEFLATING, ball.performDeflate());
         assertEquals(BallsTest.NOT_INFLATING, ball.performInflate());
-        assertEquals("Hockey ball: I'm Rolling Oddly!", ball.roll());
+        assertEquals("Pool ball: I'm Rolling!", ball.roll());
     }
 
     @Test
     public void testCustomBall () {
-        HockeyBall ball = new HockeyBall(new Crash(), new NotDeflatable(), new NormalRoll());
+        PoolBall ball = new PoolBall(new Crash(), new NotDeflatable(), new NormalRoll());
         assertEquals(BallsTest.CRASH_BOUNCE, ball.performBounce());
         assertEquals(BallsTest.NOT_DEFLATING, ball.performDeflate());
         assertEquals(BallsTest.NOT_INFLATING, ball.performInflate());
-        assertEquals("Hockey ball: I'm Rolling!", ball.roll());
+        assertEquals("Pool ball: I'm Rolling!", ball.roll());
     }
 }
