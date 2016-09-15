@@ -15,7 +15,7 @@ public abstract class SurfVest {
         return type + " is Saving you!";
     }
 
-    public String capacityHigh(){ return floatBehavior.FloatCapacity();}
+    public String capacity(){ return floatBehavior.FloatCapacity();}
 
     public String performDeflate() {
         return deflateBehavior.deflate();
