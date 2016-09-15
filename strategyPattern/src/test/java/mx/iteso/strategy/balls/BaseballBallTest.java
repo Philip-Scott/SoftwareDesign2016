@@ -15,6 +15,6 @@ public class BaseballBallTest {
         assertEquals(BallsTest.IRREGULAR_BOUNCE, baceball.performBounce());
         assertEquals(BallsTest.NOT_DEFLATING, baceball.performDeflate());
         assertEquals(BallsTest.NOT_INFLATING, baceball.performInflate());
-        assertEquals("Baseball ball is rolling!", baceball.roll());
+        assertEquals("Baseball ball: I'm Rolling!", baceball.roll());
     }
 }

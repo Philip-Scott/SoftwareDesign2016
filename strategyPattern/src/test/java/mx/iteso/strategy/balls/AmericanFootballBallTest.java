@@ -13,6 +13,6 @@ public class AmericanFootballBallTest {
         assertEquals(BallsTest.IRREGULAR_BOUNCE, americanFootballBall.performBounce());
         assertEquals(BallsTest.DEFLATING, americanFootballBall.performDeflate());
         assertEquals(BallsTest.INFLATING, americanFootballBall.performInflate());
-        assertEquals("American Football ball is rolling!", americanFootballBall.roll());
+        assertEquals("American Football ball: I'm Rolling Oddly!", americanFootballBall.roll());
     }
 }

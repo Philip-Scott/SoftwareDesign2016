@@ -16,7 +16,7 @@ public class SoccerBallTest {
         assertEquals(BallsTest.NORMAL_BOUNCE, soccerBall.performBounce());
         assertEquals(BallsTest.DEFLATING, soccerBall.performDeflate());
         assertEquals(BallsTest.INFLATING, soccerBall.performInflate());
-        assertEquals("Soccer ball is rolling!", soccerBall.roll());
+        assertEquals("Soccer ball: I'm Rolling!", soccerBall.roll());
     }
 }
 

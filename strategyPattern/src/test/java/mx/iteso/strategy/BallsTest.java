@@ -11,5 +11,6 @@ public class BallsTest {
     public static final String NORMAL_BOUNCE = "I'm bouncing normally!";
     public static final String IRREGULAR_BOUNCE = "I'm bouncing irregularly!";
     public static final String CRASH_BOUNCE = "I crashed!! I can't bounce";
-
+    public static final String NORMAL_ROLL = "I'm Rolling!";
+    public static final String IRREGULAR_ROLL = "I'm Rolling Oddly!";
 }
