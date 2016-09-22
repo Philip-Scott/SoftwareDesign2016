@@ -22,6 +22,13 @@ public class StoreMonitorDisplay implements Observer, Displayable {
                 + awayTeam + " (AWAY) " + awayGoals);
     }
 
+    public void Notifications(boolean State){
+        if(true == State){
+            this.scoresData.registerObserver(this);
+        }
+        System.out.println("Notifications has been stopped");
+    }
+
     public void update(String home, String away, int homeGoals, int awayGoals) {
         this.homeTeam = home;
         this.awayTeam = away;
