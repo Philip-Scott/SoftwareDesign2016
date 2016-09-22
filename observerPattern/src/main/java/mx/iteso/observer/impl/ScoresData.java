@@ -39,7 +39,7 @@ public class ScoresData implements Subject {
     }
 
     public void playerScored (String name, int number, String position, String team) {
-        player_goals = String.format("%s\n%s: %d: %s: :%s", player_goals, name, number, position, team);
+        player_goals = String.format("%s%s%s: %d: %s: %s", player_goals, player_goals == "" ? "" : "\n" , name, number, position, team);
     }
 
     public void setScore(String homeTeam, String awayTeam, int homeGoals, int awayGoals){
