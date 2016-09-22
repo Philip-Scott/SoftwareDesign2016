@@ -22,6 +22,7 @@ public class StoreMonitorDisplay implements Observer, Displayable {
                 + awayTeam + " (AWAY) " + awayGoals);
     }
 
+<<<<<<< HEAD
     public void Notifications(boolean State){
         if(true == State){
             this.scoresData.registerObserver(this);
@@ -30,11 +31,13 @@ public class StoreMonitorDisplay implements Observer, Displayable {
     }
 
     public void update(String home, String away, int homeGoals, int awayGoals) {
+=======
+    public void update(String home, String away, int homeGoals, int awayGoals, String gamedata) {
+>>>>>>> 863dde0ad39604e9ec9279fcaa55af9e508e8fa6
         this.homeTeam = home;
         this.awayTeam = away;
         this.homeGoals = homeGoals;
         this.awayGoals = awayGoals;
         display();
     }
-
 }
