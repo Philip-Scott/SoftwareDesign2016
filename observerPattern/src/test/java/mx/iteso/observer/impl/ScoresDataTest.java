@@ -30,6 +30,6 @@ public class ScoresDataTest {
         scoresData.registerObserver(observer);
         scoresData.registerObserver(observer);
         scoresData.setScore("testTeam", "testTeam2", 1, 0);
-        verify(observer, times(2)).update("testTeam", "testTeam2", 1, 0);
+        verify(observer, times(2)).update("testTeam", "testTeam2", 1, 0, "");
     }
 }
