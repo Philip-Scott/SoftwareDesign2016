@@ -12,6 +12,7 @@ public class ScoresData implements Subject {
     private String homeTeam;
     private String awayTeam;
 
+    private String player_goals = "";
 
     public ScoresData(){
         observers = new ArrayList<Observer>();
@@ -27,15 +28,21 @@ public class ScoresData implements Subject {
 
     public void notifyObservers() {
         for (Observer observer : observers) {
-            observer.update(this.homeTeam, this.awayTeam, this.homeGoals, this.awayGoals);
+            observer.update(this.homeTeam, this.awayTeam, this.homeGoals, this.awayGoals, player_goals);
         }
+
+        player_goals  = "";
     }
 
     public void newScore(){
         notifyObservers();
     }
 
-    public void setScore( String homeTeam, String awayTeam, int homeGoals, int awayGoals){
+    public void playerScored (String name, int number, String position, String team) {
+        player_goals = String.format("%s\n%s: %d: %s: :%s", player_goals, name, number, position, team);
+    }
+
+    public void setScore(String homeTeam, String awayTeam, int homeGoals, int awayGoals){
         this.homeTeam = homeTeam;
         this.awayTeam =  awayTeam;
         this.homeGoals = homeGoals;

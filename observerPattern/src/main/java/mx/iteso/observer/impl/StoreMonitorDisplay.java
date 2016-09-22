@@ -22,12 +22,11 @@ public class StoreMonitorDisplay implements Observer, Displayable {
                 + awayTeam + " (AWAY) " + awayGoals);
     }
 
-    public void update(String home, String away, int homeGoals, int awayGoals) {
+    public void update(String home, String away, int homeGoals, int awayGoals, String gamedata) {
         this.homeTeam = home;
         this.awayTeam = away;
         this.homeGoals = homeGoals;
         this.awayGoals = awayGoals;
         display();
     }
-
 }
