@@ -4,7 +4,7 @@ import mx.iteso.observer.Displayable;
 import mx.iteso.observer.Observer;
 import mx.iteso.observer.Subject;
 
-public class StoreMonitorDisplay implements Observer, Displayable {
+public class StoreMonitorDisplay implements Displayable{
     private String homeTeam;
     private String awayTeam;
     private int homeGoals;
@@ -13,13 +13,14 @@ public class StoreMonitorDisplay implements Observer, Displayable {
 
     public StoreMonitorDisplay(Subject scoresData){
         this.scoresData = scoresData;
-        this.scoresData.registerObserver(this);
     }
 
-    public void display() {
-        System.out.println("Latest score is:");
-        System.out.println(homeTeam + " (HOME) " + homeGoals + " - "
-                + awayTeam + " (AWAY) " + awayGoals);
+    public String display() {
+        String out = "Latest score is:" +
+                homeTeam + " (HOME) " + homeGoals + " - " + awayTeam + " (AWAY) " + awayGoals;
+
+        System.out.println(out);
+        return out;
     }
 
     public void update(String home, String away, int homeGoals, int awayGoals, String gamedata) {
