@@ -1,7 +1,9 @@
 package mx.iteso.observer.impl;
 
 import org.junit.Before;
-import org.junit.Test;
+import org.junit.*;
+import static org.junit.Assert.assertEquals;
+import static org.mockito.Mockito.*;
 
 import static org.mockito.Mockito.mock;
 
@@ -18,6 +20,6 @@ public class StoreMonitorDisplayTest {
     @Test
     public void testUpdate() {
         storeMonitorDisplay.update("homeTeam", "awayTeam", 1, 0, "");
-        //Nothing to assert or verify for now
+
     }
 }
