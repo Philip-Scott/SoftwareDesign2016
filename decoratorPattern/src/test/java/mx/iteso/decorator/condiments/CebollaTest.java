@@ -21,7 +21,6 @@ public class CebollaTest {
         double cost = cebolla.cost();
         assertEquals(8.0, cost,0);
     }
-
     @Test
     public void testDescription(){
         Taco cebolla = new Cebolla(taco);
