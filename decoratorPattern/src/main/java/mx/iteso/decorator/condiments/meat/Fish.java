@@ -13,6 +13,13 @@ public class Fish extends CondimentsDecorator {
 
     @Override
     public double cost() {
+        double tacoS = getSize();
+        if(tacoS == MEGA || tacoS == REGULAR){
+
+        }
+        else{
+            throw new NullPointerException( "No hay de ese tamaño" );
+        }
         return 3 * taco.getSize()  + taco.cost();
     }
 }

@@ -7,7 +7,7 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.*;
 
-public class CebollaTest {
+public class TortillaMaizTest {
     private Taco taco;
     @Before
     public void setUp(){
@@ -16,17 +16,17 @@ public class CebollaTest {
 
     @Test
     public void testCost(){
-        Taco cebolla = new Cebolla(taco);
+        Taco tortillamaiz = new TortillaMaiz(taco);
         when(taco.cost()).thenReturn(8.0);
-        double cost = cebolla.cost();
+        double cost = tortillamaiz.cost();
         assertEquals(8.0, cost,0);
     }
 
     @Test
     public void testDescription(){
-        Taco cebolla = new Cebolla(taco);
+        Taco tortillamaiz = new TortillaMaiz(taco);
         when(taco.getDescription()).thenReturn("Taco Normal");
-        String desc = cebolla.getDescription();
-        assertEquals("Taco Normal con cebolla", desc);
+        String desc = tortillamaiz.getDescription();
+        assertEquals("Taco Normal en tortilla de maíz", desc);
     }
 }
