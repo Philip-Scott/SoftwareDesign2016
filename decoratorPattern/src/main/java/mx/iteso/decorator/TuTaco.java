@@ -27,6 +27,7 @@ public class TuTaco {
         System.out.println("$" + taco.cost() + " MXN");
 
         Taco taco2 = new TacoNormal();
+        taco2.setSize (Taco.MEGA);
 
         taco2 = new TortillaHarina(taco2);
         taco2 = new Lengua(taco2);

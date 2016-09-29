@@ -15,5 +15,9 @@ public abstract class Taco {
             this.size = size_;
         }
     }
+
+    public double getSize () {
+        return size;
+    }
     public abstract double cost();
 }

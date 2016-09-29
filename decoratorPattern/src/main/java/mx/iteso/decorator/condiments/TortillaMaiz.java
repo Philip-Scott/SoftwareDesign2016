@@ -4,7 +4,7 @@ import mx.iteso.decorator.CondimentsDecorator;
 import mx.iteso.decorator.Taco;
 
 public class TortillaMaiz extends CondimentsDecorator {
-    Taco taco;
+
 
     public TortillaMaiz (Taco taco){
         this.taco = taco;
