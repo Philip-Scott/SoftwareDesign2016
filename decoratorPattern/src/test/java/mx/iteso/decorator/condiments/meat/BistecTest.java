@@ -28,6 +28,6 @@ public class BistecTest {
         Taco meat = new Bistec(taco);
         when(taco.getDescription()).thenReturn("Taco Normal");
         String desc = meat.getDescription();
-        assertEquals("Taco Normal", desc);
+        assertEquals("Taco Normal de bistec", desc);
     }
 }

@@ -28,6 +28,6 @@ public class ShrimpTest {
         Taco meat = new Shrimp(taco);
         when(taco.getDescription()).thenReturn("Taco Normal");
         String desc = meat.getDescription();
-        assertEquals("Taco Normal", desc);
+        assertEquals("Taco Normal  de camaron", desc);
     }
 }
