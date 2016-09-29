@@ -27,6 +27,6 @@ public class CilantroTest {
         Taco cilantro = new Cilantro(taco);
         when(taco.getDescription()).thenReturn("Taco Normal");
         String desc = cilantro.getDescription();
-        assertEquals("Taco Normal con cilandro", desc);
+        assertEquals("Taco Normal con cilantro", desc);
     }
 }
