@@ -4,6 +4,7 @@ import mx.iteso.decorator.Taco;
 
 public class TacoNormal extends Taco {
     public TacoNormal(){
+
         description = "Taco normal";
     }
 
