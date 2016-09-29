@@ -16,6 +16,6 @@ public class Shrimp extends CondimentsDecorator {
 
     @Override
     public double cost() {
-        return 8 + taco.cost();
+        return 8 * taco.getSize() + taco.cost();
     }
 }

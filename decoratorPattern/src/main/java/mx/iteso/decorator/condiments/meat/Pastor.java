@@ -16,6 +16,6 @@ public class Pastor extends CondimentsDecorator {
 
     @Override
     public double cost() {
-        return 0 + taco.cost();
+        return 1 * taco.getSize() + taco.cost();
     }
 }

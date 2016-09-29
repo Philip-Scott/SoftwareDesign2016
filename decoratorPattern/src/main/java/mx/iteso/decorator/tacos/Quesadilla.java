@@ -9,6 +9,6 @@ public class Quesadilla extends Taco {
 
     @Override
     public double cost() {
-        return 10.00;
+        return 10.00 * getSize();
     }
 }

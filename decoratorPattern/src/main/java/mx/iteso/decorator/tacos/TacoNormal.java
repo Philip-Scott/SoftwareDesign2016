@@ -10,6 +10,6 @@ public class TacoNormal extends Taco {
 
     @Override
     public double cost() {
-        return 8.00;
+        return 8.00 * getSize();
     }
 }

@@ -13,6 +13,6 @@ public class Fish extends CondimentsDecorator {
 
     @Override
     public double cost() {
-        return 7  + taco.cost();
+        return 3 * taco.getSize()  + taco.cost();
     }
 }

@@ -9,4 +9,8 @@ public abstract class CondimentsDecorator extends Taco {
     public double getSize () {
         return taco.getSize();
     }
+
+    public void setSize (double size) {
+        taco.setSize(size);
+    }
 }
