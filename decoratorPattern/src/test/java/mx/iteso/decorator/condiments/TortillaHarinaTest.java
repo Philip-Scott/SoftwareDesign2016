@@ -17,9 +17,9 @@ public class TortillaHarinaTest {
     @Test
     public void testCost(){
         Taco tortillaharina = new TortillaHarina(taco);
-        when(taco.cost()).thenReturn(12.0);
+        when(taco.cost()).thenReturn(16.0);
         double cost = tortillaharina.cost();
-        assertEquals(12.0, cost,0);
+        assertEquals(16.0, cost,0);
     }
 
     @Test
@@ -27,6 +27,6 @@ public class TortillaHarinaTest {
         Taco tortillaharina = new TortillaHarina(taco);
         when(taco.getDescription()).thenReturn("Taco Normal");
         String desc = tortillaharina.getDescription();
-        assertEquals("Taco Normal en tortilla de harina ", desc);
+        assertEquals("Taco Normal en tortilla de harina", desc);
     }
 }
