@@ -16,6 +16,13 @@ public class Shrimp extends CondimentsDecorator {
 
     @Override
     public double cost() {
-        return 8 * taco.getSize() + taco.cost();
+        double tacoS = getSize();
+            if(tacoS == MEGA || tacoS == REGULAR){
+
+            }
+            else{
+                throw new NullPointerException( "No hay de ese tamaño" );
+            }
+        return 8 * tacoS + taco.cost();
     }
 }
