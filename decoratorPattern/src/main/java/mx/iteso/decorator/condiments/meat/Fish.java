@@ -15,11 +15,9 @@ public class Fish extends CondimentsDecorator {
     public double cost() {
         double tacoS = getSize();
         if(tacoS == MEGA || tacoS == REGULAR){
-
+            return 3 * taco.getSize()  + taco.cost();
+        } else{
+            throw new IndexOutOfBoundsException( "No hay de ese tamaño" );
         }
-        else{
-            throw new NullPointerException( "No hay de ese tamaño" );
-        }
-        return 3 * taco.getSize()  + taco.cost();
     }
 }

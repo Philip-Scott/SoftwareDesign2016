@@ -9,26 +9,40 @@ import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.*;
 
 public class FishTest {
-    private Taco taco;
+    private Taco meat;
     @Before
     public void setUp(){
-        taco = mock((Taco.class));
+        Taco taco = new TestTaco ();
+
+        meat = new Fish(taco);
     }
 
     @Test
     public void testCost(){
-        Taco meat = new Fish(taco);
-        when(taco.getSize()).thenReturn(Taco.MEGA);
-        when(taco.cost()).thenReturn(8.0);
         double cost = meat.cost();
-        assertEquals(14.3, cost,0);
+        assertEquals(4.0, cost, 0);
     }
 
     @Test
     public void testDescription(){
-        Taco meat = new Fish(taco);
-        when(taco.getDescription()).thenReturn("Taco Normal");
-        String desc = meat.getDescription();
-        assertEquals("Taco Normal de pescado", desc);
+        assertEquals("Taco Normal de pescado", meat.getDescription());
+    }
+
+    @Test(expected=IndexOutOfBoundsException.class)
+    public void errorTest () {
+        meat.setSize(Taco.MINI);
+        meat.cost();
+    }
+
+    class TestTaco extends Taco {
+        @Override
+        public String getDescription() {
+            return "Taco Normal";
+        }
+
+        @Override
+        public double cost() {
+            return 1;
+        }
     }
 }
