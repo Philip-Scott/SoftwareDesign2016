@@ -1,7 +1,7 @@
-package mx.iteso.decorator.condiments.meat;
+package mx.iteso.decorator.condiments.Meat;
 
 import mx.iteso.decorator.Taco;
-import mx.iteso.decorator.condiments.meat.*;
+import mx.iteso.decorator.condiments.meat.Fish;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -18,9 +18,10 @@ public class FishTest {
     @Test
     public void testCost(){
         Taco meat = new Fish(taco);
+        when(taco.getSize()).thenReturn(Taco.MEGA);
         when(taco.cost()).thenReturn(8.0);
         double cost = meat.cost();
-        assertEquals(8.0, cost,0);
+        assertEquals(14.3, cost,0);
     }
 
     @Test
@@ -28,6 +29,6 @@ public class FishTest {
         Taco meat = new Fish(taco);
         when(taco.getDescription()).thenReturn("Taco Normal");
         String desc = meat.getDescription();
-        assertEquals("Taco Normal", desc);
+        assertEquals("Taco Normal de pescado", desc);
     }
 }

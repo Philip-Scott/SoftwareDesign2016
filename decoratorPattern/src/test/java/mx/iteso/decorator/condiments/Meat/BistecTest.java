@@ -1,4 +1,4 @@
-package mx.iteso.decorator.condiments.meat;
+package mx.iteso.decorator.condiments.Meat;
 
 import mx.iteso.decorator.Taco;
 import mx.iteso.decorator.condiments.meat.Bistec;

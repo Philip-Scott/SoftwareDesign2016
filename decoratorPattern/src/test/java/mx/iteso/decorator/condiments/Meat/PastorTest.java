@@ -1,7 +1,7 @@
-package mx.iteso.decorator.condiments.meat;
+package mx.iteso.decorator.condiments.Meat;
 
 import mx.iteso.decorator.Taco;
-import mx.iteso.decorator.condiments.meat.*;
+import mx.iteso.decorator.condiments.meat.Pastor;
 import org.junit.Before;
 import org.junit.Test;
 
