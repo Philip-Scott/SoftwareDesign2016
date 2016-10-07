@@ -1,5 +1,8 @@
 package mx.iteso.factory;
 
+import mx.iteso.factory.pozoles.Ingredients.*;
+import mx.iteso.factory.pozoles.Menudo;
+import mx.iteso.factory.pozoles.PozoleRojo;
 import mx.iteso.factory.stores.MenudoStore;
 import mx.iteso.factory.stores.PozoleRojoStore;
 import mx.iteso.factory.stores.PozoleVerdeStore;
@@ -10,15 +13,26 @@ public class PozoleMain {
         PozoleStore rojoStore = new PozoleRojoStore();
         PozoleStore menuderia = new MenudoStore();
 
-        Pozole pozole = verdeStore.orderPozole("pollo");
-        System.out.println("First order is: "+ pozole.getName());
-        System.out.println();
+        //Pozole pozole = verdeStore.orderPozole("pollo");
+
+        Pozole pozole = new Menudo();
+        pozole = new Cachete(pozole);
+        pozole = new Cebolla(pozole);
+        pozole = new Lechuga(pozole);
+
+        System.out.println("First order is: "+ pozole.get_topings());
+
+        pozole = new Oreja (new Cachete (new Lechuga(new PozoleRojo())));
+
+        System.out.println("Second order is: "+ pozole.get_topings());
+
+       /* System.out.println();
 
         pozole = rojoStore.orderPozole("pollo");
         System.out.println("Second order is: "+ pozole.getName());
         System.out.println();
 
         pozole = menuderia.orderPozole("pollo");
-        System.out.println("Third order is: "+ pozole.getName());
+        System.out.println("Third order is: "+ pozole.getName());*/
     }
 }

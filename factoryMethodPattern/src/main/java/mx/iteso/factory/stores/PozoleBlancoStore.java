@@ -11,16 +11,16 @@ public class PozoleBlancoStore extends PozoleStore {
 
     @Override
     protected Pozole createPozole(String meat) {
-        if (meat.equals("pollo"))
-            return new PozoleVerdePollo();
+        /*if (meat.equals("pollo"))
+            //return new PozoleVerdePollo();
         else if (meat.equals("cachete") )
-            return new PozoleVerdeCachete();
+            //return new PozoleVerdeCachete();
         else if (meat.equals("oreja"))
-            return new PozoleVerdeOreja();
+            //return new PozoleVerdeOreja();
         else if (meat.equals("pierna") )
-            return new PozoleVerdePierna();
+            //return new PozoleVerdePierna();
         else if (meat.equals("trompa"))
-            return new PozoleVerdeTrompa();
-        else return null;
+            //return new PozoleVerdeTrompa();
+        else */return null;
     }
 }

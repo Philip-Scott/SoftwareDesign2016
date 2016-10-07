@@ -12,7 +12,7 @@ public class PozoleMasterStore extends PozoleStore {
     @Override
     protected Pozole createPozole(String meat) {
         Pozole pozole = null;
-        if (meat.equals("pollo rojo"))
+        /*if (meat.equals("pollo rojo"))
             pozole = new PozoleRojoPollo();
         else if (meat.equals("cachete rojo") )
             pozole = new PozoleRojoCachete();
@@ -34,7 +34,7 @@ public class PozoleMasterStore extends PozoleStore {
             pozole = new PozoleVerdeTrompa();
         else if (meat.equals("menudo")) {
             pozole = new Menudo();
-        }
+        }*/
 
         return pozole;
     }

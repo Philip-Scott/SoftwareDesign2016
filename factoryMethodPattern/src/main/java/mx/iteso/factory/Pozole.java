@@ -5,8 +5,6 @@ import java.util.ArrayList;
 public abstract class Pozole {
     public String name;
     public String broth;
-    public ArrayList toppings = new ArrayList();
-
 
     public void serve() {
         System.out.println("Serving in regular pozole plate..." );
@@ -17,11 +15,13 @@ public abstract class Pozole {
         System.out.println("Adding corn kernels..." );
         System.out.println("Adding broth..." );
         System.out.println("Adding toppings:" );
-        for (int i = 0; i < toppings.size(); i++){
-            System.out.println("    " + toppings.get(i));
-        }
-
+        System.out.println (get_topings());
     }
+
+    public String get_topings () {
+        return name + " de " + broth;
+    }
+
     public String getName(){
         return name;
     }

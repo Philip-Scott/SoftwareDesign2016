@@ -6,9 +6,6 @@ public class Menudo extends Pozole {
     public Menudo() {
         name = "Menudo";
         broth = "Caldo Rojo";
-        toppings.add("Oregano");
-        toppings.add("Col");
-        toppings.add("Rabanos");
     }
 
     @Override
