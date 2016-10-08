@@ -9,6 +9,12 @@ public class MenudoStore extends PozoleStore {
     @Override
     protected Pozole createPozole(String meat) {
         Pozole pozole = new Menudo();
+
+        pozole = addIngredient(pozole, meat);
+
+        pozole = addIngredient(pozole, "cebolla");
+        pozole = addIngredient(pozole, "col");
+
         return pozole;
     }
 }

@@ -6,10 +6,10 @@ import mx.iteso.factory.pozoles.PozoleIngedient;
 /**
  * Created by felipe on 10/6/16.
  */
-public class Trompa extends PozoleIngedient {
+public class Rabanos extends PozoleIngedient {
 
-    public Trompa (Pozole posoze) {
+    public Rabanos(Pozole posoze) {
         this.pozole = posoze;
-        name = "Trompa";
+        name = "Rabanos";
     }
 }

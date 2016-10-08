@@ -7,35 +7,25 @@ import mx.iteso.factory.pozoles.*;
 /**
  * Created by felipe on 10/6/16.
  */
-public class PozoleMasterStore extends PozoleStore {
+public class PozoleMasterStore {
 
-    @Override
-    protected Pozole createPozole(String meat) {
-        Pozole pozole = null;
-        /*if (meat.equals("pollo rojo"))
-            pozole = new PozoleRojoPollo();
-        else if (meat.equals("cachete rojo") )
-            pozole = new PozoleRojoCachete();
-        else if (meat.equals("oreja rojo"))
-            pozole = new PozoleRojoOreja();
-        else if (meat.equals("pierna rojo") )
-            pozole = new PozoleRojoPierna();
-        else if (meat.equals("trompa rojo"))
-            pozole = new PozoleRojoTrompa();
-        else if (meat.equals("pollo rojo"))
-            pozole = new PozoleVerdePollo();
-        else if (meat.equals("cachete verde") )
-            pozole = new PozoleVerdeCachete();
-        else if (meat.equals("oreja verde"))
-            pozole = new PozoleVerdeOreja();
-        else if (meat.equals("pierna verde") )
-            pozole = new PozoleVerdePierna();
-        else if (meat.equals("trompa verde"))
-            pozole = new PozoleVerdeTrompa();
-        else if (meat.equals("menudo")) {
-            pozole = new Menudo();
-        }*/
+    MenudoStore menudo;
+    PozoleBlancoStore blanco;
+    PozoleRojoStore rojo;
+    PozoleVerdeStore verde;
+    PozolilloStore pozolillo;
 
-        return pozole;
+    protected Pozole createPozole(String type, String meat) throws IllegalArgumentException {
+        if (type.equals("menudo")) {
+            return menudo.createPozole (meat);
+        } else if (type.equals("blanco")) {
+            return blanco.createPozole(meat);
+        } else if (type.equals("verde")) {
+            return verde.createPozole(meat);
+        } else if (type.equals(rojo)) {
+            return rojo.createPozole(meat);
+        } else if (type.equals(pozolillo)) {
+            return pozolillo.createPozole(meat);
+        } else throw new IllegalArgumentException("Invalid Type: " + type);
     }
 }

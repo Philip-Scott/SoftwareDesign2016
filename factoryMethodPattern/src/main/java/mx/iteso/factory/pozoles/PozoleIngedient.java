@@ -11,7 +11,9 @@ public abstract class PozoleIngedient extends Pozole {
     protected Pozole pozole;
     protected String name;
 
-    public String get_topings () {
-        return pozole.get_topings() + " con " + name;
+    public String getName () {return pozole.getName() + " con " + name;}
+
+    public String prepare () {
+        return pozole.prepare() + ", " + name;
     }
 }

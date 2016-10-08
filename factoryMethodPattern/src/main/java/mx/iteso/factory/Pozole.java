@@ -10,19 +10,21 @@ public abstract class Pozole {
         System.out.println("Serving in regular pozole plate..." );
     }
 
-    public void prepare() {
-        System.out.println("Preparing " + name);
-        System.out.println("Adding corn kernels..." );
-        System.out.println("Adding broth..." );
-        System.out.println("Adding toppings:" );
-        System.out.println (get_topings());
+    public String prepare() {
+        String out = "";
+        out += ("Preparing " + name + "\n");
+        out += ("Adding corn kernels...\n" );
+        out += ("Adding broth & toppings...\n" );
+        out += (broth);
+
+        return out;
     }
 
-    public String get_topings () {
+    public String getTopings () {
         return name + " de " + broth;
     }
 
     public String getName(){
-        return name;
+        return name + " de " + broth;
     }
 }
