@@ -1,4 +1,4 @@
-package mx.iteso.factory.storesTest;
+package mx.iteso.factory;
 
 import mx.iteso.factory.Pozole;
 import mx.iteso.factory.PozoleStore;
@@ -29,7 +29,7 @@ public class PozoleStoreTest {
         assertEquals("Menudo de Caldo Rojo con Aguacate con Cebolla con Col",pozole5.getName());
     }
 
-    @Test(expected=IndexOutOfBoundsException.class)
+    @Test(expected=IllegalArgumentException.class)
     public void errorTest () {
         PozoleStore menuderia = new MenudoStore();
         Pozole pozole = menuderia.orderPozole("chocolate");
