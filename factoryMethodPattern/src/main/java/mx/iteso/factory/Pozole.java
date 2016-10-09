@@ -6,8 +6,10 @@ public abstract class Pozole {
     public String name;
     public String broth;
 
-    public void serve() {
-        System.out.println("Serving in regular pozole plate..." );
+    public String serve() {
+        String out ="";
+        out += "Serving in regular pozole plate...";
+        return out;
     }
 
     public String prepare() {

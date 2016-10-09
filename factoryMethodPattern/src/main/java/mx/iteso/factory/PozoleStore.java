@@ -38,9 +38,9 @@ public abstract class PozoleStore {
         else if (ingredient.equals("rabanos"))
             out = new Rabanos(pozole);
         else if (ingredient.equals("elotes"))
-            out = new Rabanos(pozole);
+            out = new Elote(pozole);
         else if (ingredient.equals("aguacate"))
-            out = new Rabanos(pozole);
+            out = new Aguacate(pozole);
         else throw new IllegalArgumentException ("Ingredient does not exist: " + ingredient);
 
         return out;

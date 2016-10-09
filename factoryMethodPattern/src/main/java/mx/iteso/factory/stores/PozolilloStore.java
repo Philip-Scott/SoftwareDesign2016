@@ -12,7 +12,7 @@ public class PozolilloStore extends PozoleStore {
 
         pozole = addIngredient(pozole, meat);
 
-        pozole = addIngredient(pozole, "elote");
+        pozole = addIngredient(pozole, "elotes");
         pozole = addIngredient(pozole, "aguacate");
         pozole = addIngredient(pozole, "rabanos");
 
