@@ -10,12 +10,9 @@ public class ChocolateBoilerTest {
     @Test
     public void isEmptyTest(){
         ChocolateBoiler chocolate;
-        ChocolateBoiler chocolate1;
         chocolate = ChocolateBoiler.getInstance();
-        chocolate1 = ChocolateBoiler.getInstance();
         chocolate.fill();
         assertEquals(false,chocolate.isEmpty());
-        //assertEquals(false,chocolate1.isEmpty());
         chocolate.drain();
         assertEquals(false,chocolate.isEmpty());
     }
@@ -24,7 +21,7 @@ public class ChocolateBoilerTest {
         ChocolateBoiler chocolate;
         chocolate = ChocolateBoiler.getInstance();
         chocolate.boil();
-        assertEquals(false,chocolate.isBoiled());
+        assertEquals(true,chocolate.isBoiled());
     }
 
 }
