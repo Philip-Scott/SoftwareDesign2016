@@ -42,6 +42,7 @@ public class ChocolateBoiler {
     }
 
     public synchronized void fill () {
+        Time();
         synchronized (ChocolateBoiler.class) {
             if (isEmpty()) {
                 empty = false;
@@ -51,6 +52,7 @@ public class ChocolateBoiler {
     }
 
     public synchronized void drain () {
+        Time();
         synchronized (ChocolateBoiler.class) {
             if (!isEmpty() && isBoiled()) {
                 // drain the boiled milk and chocolate
@@ -60,11 +62,20 @@ public class ChocolateBoiler {
     }
 
     public synchronized void boil () {
+        Time();
         synchronized (ChocolateBoiler.class) {
             if (!isEmpty () && !isBoiled ()) {
                 // bring the contents to a boil
                 boiled = true;
             }
+        }
+    }
+
+    public void Time(){
+        try {
+            Thread.sleep(1000);
+        }catch(InterruptedException e){
+
         }
     }
 
