@@ -41,34 +41,42 @@ public class ChocolateBoiler {
         return instance;
     }
 
-    public synchronized void fill () {
-        Time();
+    public synchronized boolean fill () {
         synchronized (ChocolateBoiler.class) {
+            Time();
             if (isEmpty()) {
                 empty = false;
                 boiled = false;
+                return true;
             }
         }
+        return false;
     }
 
-    public synchronized void drain () {
-        Time();
+    public synchronized boolean drain () {
         synchronized (ChocolateBoiler.class) {
+            Time();
             if (!isEmpty() && isBoiled()) {
                 // drain the boiled milk and chocolate
                 empty = true;
+                return true;
             }
         }
+
+        return false;
     }
 
-    public synchronized void boil () {
-        Time();
+    public synchronized boolean boil () {
         synchronized (ChocolateBoiler.class) {
+            Time();
             if (!isEmpty () && !isBoiled ()) {
                 // bring the contents to a boil
                 boiled = true;
+                return true;
             }
         }
+
+        return false;
     }
 
     public void Time(){
