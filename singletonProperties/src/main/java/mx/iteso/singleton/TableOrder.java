@@ -2,10 +2,15 @@ package mx.iteso.singleton;
 
 import java.util.ArrayList;
 
-public abstract class TableOrder {
+public class TableOrder {
     public ArrayList dishes;
     public ArrayList drinks;
     public String tableName;
+
+    public TableOrder () {
+        drinks = new ArrayList();
+        dishes = new ArrayList();
+    }
 
     public void clearDrinks(){
         drinks.clear();
@@ -22,28 +27,32 @@ public abstract class TableOrder {
         dishes.add(dish);
     }
 
-    public void printCheck(){
+    public String printCheck(){
+        String out = "";
         float total = 0;
         Drink dr;
         Dish ds;
         int i;
-        System.out.println("Check for " + tableName);
-        System.out.println("Drinks:");
+        out += ("Check for " + tableName+ "\n");
+        out +=("Drinks:"+ "\n");
+
         for (i = 0; i < drinks.size(); i++){
             dr = (Drink) drinks.get(i);
-            System.out.println(dr.getWaiter() + ": " + dr.getName()+ " " + dr.getPrice());
+            out += (dr.getWaiter() + ": " + dr.getName()+ " " + dr.getPrice()) + "\n";
             total += dr.getPrice();
         }
-        System.out.println("Dishes:");
+
+        out += "Dishes:" + "\n";
         for (i = 0; i < dishes.size(); i++){
             ds = (Dish) dishes.get(i);
-            System.out.println(ds.getWaiter() + ": " + ds.getName()+ " " + ds.getPrice());
+            out += (ds.getWaiter() + ": " + ds.getName()+ " " + ds.getPrice());
             total += ds.getPrice();
         }
-        System.out.println("Total: $" + total);
 
+        out += ("Total: $" + total);
+        System.out.println(out);
+
+        return out;
     }
-
-
 }
 
