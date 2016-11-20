@@ -7,4 +7,8 @@ public class Passive implements State {
     public String run_ai () {
         return "is Passive";
     }
+
+    public State next_state () {
+        return new Aggressive();
+    }
 }

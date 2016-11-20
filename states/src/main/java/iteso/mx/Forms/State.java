@@ -5,4 +5,6 @@ package iteso.mx.Forms;
  */
 public interface State {
     public String run_ai ();
+
+    public State next_state ();
 }

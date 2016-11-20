@@ -39,4 +39,21 @@ public class SquirrelTest {
         squirrel.set_state(new TakingOverTheWorld());
         assertEquals("Squirrel is taking over the world!", squirrel.toString());
     }
+
+    @Test
+    public void sequence_test () {
+        assertEquals("Squirrel is Passive", squirrel.toString());
+
+        squirrel.next_state();
+        assertEquals("Squirrel is Aggressive", squirrel.toString());
+
+        squirrel.next_state();
+        assertEquals("Squirrel is taking over the world!", squirrel.toString());
+
+        squirrel.next_state();
+        assertEquals("Squirrel is Defensive", squirrel.toString());
+
+        squirrel.next_state();
+        assertEquals("Squirrel is Passive", squirrel.toString());
+    }
 }

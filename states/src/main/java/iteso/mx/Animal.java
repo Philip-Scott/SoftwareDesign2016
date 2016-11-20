@@ -16,4 +16,8 @@ public abstract class Animal {
     public void set_state (State state) {
         this.state = state;
     }
+
+    public void next_state () {
+        this.state = this.state.next_state();
+    }
 }

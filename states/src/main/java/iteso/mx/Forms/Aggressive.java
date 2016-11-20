@@ -7,4 +7,8 @@ public class Aggressive implements State {
     public String run_ai () {
         return "is Aggressive";
     }
+
+    public State next_state () {
+        return new TakingOverTheWorld();
+    }
 }

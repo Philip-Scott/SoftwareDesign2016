@@ -6,9 +6,7 @@ import iteso.mx.Forms.Squirrel;
  * Created by Diego on 07/11/2016.
  */
 public class Prototype {
-    public static void main(String[] args){
-
-
+    public static void main(String[] args) {
         Animal original = new Squirrel();
         Animal new_squirrel = (Animal) original.clone();
 

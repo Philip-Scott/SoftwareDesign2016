@@ -7,4 +7,8 @@ public class TakingOverTheWorld implements State {
     public String run_ai () {
         return "is taking over the world!";
     }
+
+    public State next_state () {
+        return new Defensive();
+    }
 }

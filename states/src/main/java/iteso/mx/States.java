@@ -8,11 +8,22 @@ import iteso.mx.Forms.Aggressive;
 public class States {
     public static void main(String[] args) {
         Animal squirrel = new Squirrel();
-
         System.out.println (squirrel);
 
-        squirrel.set_state(new Aggressive());
+        // Begin aggressiveness!
+        squirrel.next_state();
+        System.out.println (squirrel);
 
+        // Start world domination!
+        squirrel.next_state();
+        System.out.println (squirrel);
+
+        // ok... RUN!
+        squirrel.next_state();
+        System.out.println (squirrel);
+
+        // It was worth a try!
+        squirrel.next_state();
         System.out.println (squirrel);
     }
 }

@@ -10,5 +10,4 @@ public class Squirrel extends Animal {
         form = "Squirrel";
         set_state(new Passive());
     }
-
 }
