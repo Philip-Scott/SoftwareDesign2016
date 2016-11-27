@@ -24,9 +24,12 @@
       <file leaf-file-name="BluetoothHardware.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/wingpanel/indicator/bluetooth/backend/BluetoothHardware.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
-              <folding />
+            <state relative-caret-position="90">
+              <caret line="6" column="65" selection-start-line="6" selection-start-column="65" selection-end-line="6" selection-end-column="65" />
+              <folding>
+                <element signature="e#386#387#0" expanded="true" />
+                <element signature="e#422#423#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -34,7 +37,7 @@
       <file leaf-file-name="BluetoothControler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/wingpanel/indicator/bluetooth/controller/BluetoothControler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
+            <state relative-caret-position="570">
               <caret line="65" column="23" selection-start-line="65" selection-start-column="23" selection-end-line="65" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -49,12 +52,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WingpanelIndicatorBluetooth.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="WingpanelIndicatorBluetooth.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/wingpanel/indicator/bluetooth/WingpanelIndicatorBluetooth.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
               <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BluetoothControlerTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/wingpanel/indicator/bluetooth/BluetoothControlerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="32" column="28" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -80,9 +95,11 @@
         <option value="$PROJECT_DIR$/src/main/java/wingpanel/indicator/bluetooth/VideoGameFacade.java" />
         <option value="/usr/lib/jvm/default-java/jre/lib/rt.jar!/java/util/ArrayList.class" />
         <option value="$PROJECT_DIR$/src/main/java/wingpanel/indicator/bluetooth/controller/BluetoothControler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/wingpanel/indicator/bluetooth/backend/BluetoothHardware.java" />
         <option value="$PROJECT_DIR$/src/main/java/wingpanel/indicator/bluetooth/WingpanelndicatorBluetooth.java" />
         <option value="$PROJECT_DIR$/src/main/java/wingpanel/indicator/bluetooth/WingpanelIndicatorBluetooth.java" />
+        <option value="$PROJECT_DIR$/../strategyPattern/src/test/java/mx/iteso/strategy/vest/LifeVestSurfTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/wingpanel/indicator/bluetooth/backend/BluetoothHardware.java" />
+        <option value="$PROJECT_DIR$/src/test/java/wingpanel/indicator/bluetooth/BluetoothControlerTest.java" />
       </list>
     </option>
   </component>
@@ -162,6 +179,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bluetooth" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -264,7 +285,7 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
   </component>
-  <component name="RunManager" selected="Application.WingpanelIndicatorBluetooth">
+  <component name="RunManager" selected="JUnit.BluetoothControlerTest">
     <configuration default="false" name="WingpanelIndicatorBluetooth" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -283,6 +304,32 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="modelView" />
       <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="BluetoothControlerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="wingpanel.indicator.bluetooth.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="modelView" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="wingpanel.indicator.bluetooth" />
+      <option name="MAIN_CLASS_NAME" value="wingpanel.indicator.bluetooth.BluetoothControlerTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
       <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -529,12 +576,14 @@
       <listeners />
       <method />
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Application.WingpanelIndicatorBluetooth" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.BluetoothControlerTest" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Application.WingpanelIndicatorBluetooth" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.BluetoothControlerTest" />
+        <item index="1" class="java.lang.String" itemvalue="Application.WingpanelIndicatorBluetooth" />
       </list>
     </recent_temporary>
   </component>
@@ -551,13 +600,45 @@
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="BluetoothControlerTest - 2016.11.26 at 18h 12m 46s.xml">
+      <configuration name="BluetoothControlerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BluetoothControlerTest - 2016.11.26 at 18h 13m 25s.xml">
+      <configuration name="BluetoothControlerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BluetoothControlerTest - 2016.11.26 at 18h 13m 46s.xml">
+      <configuration name="BluetoothControlerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BluetoothControlerTest - 2016.11.26 at 18h 14m 08s.xml">
+      <configuration name="BluetoothControlerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BluetoothControlerTest - 2016.11.26 at 18h 15m 06s.xml">
+      <configuration name="BluetoothControlerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BluetoothControlerTest - 2016.11.26 at 18h 15m 17s.xml">
+      <configuration name="BluetoothControlerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BluetoothControlerTest - 2016.11.26 at 18h 16m 20s.xml">
+      <configuration name="BluetoothControlerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BluetoothControlerTest - 2016.11.26 at 18h 16m 44s.xml">
+      <configuration name="BluetoothControlerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BluetoothControlerTest - 2016.11.26 at 18h 30m 27s.xml">
+      <configuration name="BluetoothControlerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BluetoothControlerTest - 2016.11.26 at 18h 31m 12s.xml">
+      <configuration name="BluetoothControlerTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="ToolWindowManager">
     <frame x="0" y="30" width="1920" height="1050" extended-state="7" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879582" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -567,7 +648,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1828125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1828125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -627,9 +708,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../strategyPattern/src/test/java/mx/iteso/strategy/VestTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../strategyPattern/src/test/java/mx/iteso/strategy/vest/LifeVestSurfTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../strategyPattern/src/test/java/mx/iteso/strategy/BallsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="78" selection-start-line="11" selection-start-column="78" selection-end-line="11" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/wingpanel/indicator/bluetooth/backend/BluetoothHardware.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="65" selection-start-line="6" selection-start-column="65" selection-end-line="6" selection-end-column="65" />
+          <folding>
+            <element signature="e#386#387#0" expanded="true" />
+            <element signature="e#422#423#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/wingpanel/indicator/bluetooth/WingpanelIndicatorBluetooth.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/wingpanel/indicator/bluetooth/controller/BluetoothControler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
+        <state relative-caret-position="570">
           <caret line="65" column="23" selection-start-line="65" selection-start-column="23" selection-end-line="65" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -643,19 +767,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/wingpanel/indicator/bluetooth/backend/BluetoothHardware.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/wingpanel/indicator/bluetooth/BluetoothControlerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/wingpanel/indicator/bluetooth/WingpanelIndicatorBluetooth.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-          <folding />
+        <state relative-caret-position="285">
+          <caret line="32" column="28" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
